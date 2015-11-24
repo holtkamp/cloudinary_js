@@ -2875,7 +2875,7 @@
         var containerWidth;
         containerWidth = 0;
         while (((element = element != null ? element.parentNode : void 0) instanceof Element) && !containerWidth) {
-          containerWidth = Util.width(element);
+          containerWidth = Math.round(Util.width(element));
         }
         return containerWidth;
       };
