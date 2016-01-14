@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Testing jQuery.stickytabs.js</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
+    <script src="../js/jquery.cloudinary.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li><a href="#initiallyActive-open" data-toggle="tab" class="active">initially active</a></li>
+                    <li><a href="#1x12" data-toggle="tab">1x12</a></li>
+                    <li><a href="#2x6" data-toggle="tab">2x6</a></li>
+                    <li><a href="#3x4" data-toggle="tab">3x4</a></li>
+                    <li><a href="#4x3" data-toggle="tab">4x3</a></li>
+                    <li><a href="#6x2" data-toggle="tab">6x2</a></li>
+                    <li><a href="#12x1" data-toggle="tab">12x1</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="initiallyActive">
+                <h1>This TabContent would be active when the page is loaded.</h1>
+                <div class="col-md-12">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+            </div>
+            <div class="tab-pane" id="1x12">
+                <h1>1x12</h1>
+                <div class="col-md-12">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+            </div>
+            <div class="tab-pane" id="2x6">
+                <h1>2x6</h1>
+                <div class="col-md-6">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-6">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+            </div>
+            <div class="tab-pane" id="3x4">
+                <h1>3x4</h1>
+                <div class="col-md-4">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-4">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-4">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+            </div>
+            <div class="tab-pane" id="4x3">
+                <h1>4x3</h1>
+                <div class="col-md-3">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-3">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-3">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-3">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+            </div>
+            <div class="tab-pane" id="6x2">
+                <h1>6x2</h1>
+                <div class="col-md-2">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-2">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-2">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-2">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-2">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-2">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+            </div>
+            <div class="tab-pane" id="12x1">
+                <h1>6x2</h1>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+                <div class="col-md-1">
+                    <img data-src="http://res.cloudinary.com/demo/image/upload/w_auto/smiling_man.jpg" class="cld-responsive"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem dignissim, tempus tellus eget, efficitur erat. Aliquam semper finibus massa nec bibendum. Integer interdum, nisl vel molestie egestas, odio tellus rhoncus nisl, vel tincidunt leo ante et tortor. Fusce id nisl in felis commodo dictum. Vivamus non laoreet quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur vehicula laoreet. Aliquam vitae pretium urna. Donec elit neque, viverra vitae viverra et, elementum eget mauris. Fusce eget diam ut nunc viverra ullamcorper eget condimentum ex. Fusce lacinia iaculis enim, nec tincidunt ex iaculis ut. Mauris rutrum purus vitae purus consequat tincidunt. Integer vehicula orci a vulputate pulvinar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $.cloudinary.responsive();
+
+    $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (event) {
+        console.log("TabContent is displayed, trigger window resize to have the Cloudinary responsiveness kick in, but wait a few seconds to demonstrate the change...");
+        var delayInMilliseconds = 3000;
+        setTimeout(function () {
+                    $(window).resize();
+                },
+                delayInMilliseconds
+        );
+    });
+
+</script>
+</body>
+</html>
