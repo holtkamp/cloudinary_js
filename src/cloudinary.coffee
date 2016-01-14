@@ -23,7 +23,7 @@
    * Main Cloudinary class
   ###
   class Cloudinary
-    VERSION = "2.0.1"
+    VERSION = "2.0.4"
     CF_SHARED_CDN = "d3jpl91pxevbkh.cloudfront.net";
     OLD_AKAMAI_SHARED_CDN = "cloudinary-a.akamaihd.net";
     AKAMAI_SHARED_CDN = "res.cloudinary.com";
@@ -72,7 +72,7 @@
       @responsiveConfig= {}
       @responsiveResizeInitialized= false
 
-      configuration = new cloudinary.Configuration(options)
+      configuration = new Configuration(options)
 
       # Provided for backward compatibility
       @config= (newConfig, newValue) ->
@@ -485,8 +485,6 @@
       # modifications
       if options.protocol
         protocol = options.protocol + '//'
-      else if window?.location?.protocol == 'file:'
-        protocol = 'file://'
 
       if options.private_cdn
         cdnPart = options.cloud_name + "-"

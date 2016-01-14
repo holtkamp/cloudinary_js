@@ -1,5 +1,5 @@
 /*
- * Cloudinary's JavaScript library - Version 2.0.1
+ * Cloudinary's JavaScript library - Version 2.0.3
  * Copyright Cloudinary
  * see https://github.com/cloudinary/cloudinary_js
  */
@@ -1006,6 +1006,7 @@
     } else if (typeof exports === 'object') {
       return module.exports = factory(require('configuration'), require('parameters'), require('util'));
     } else {
+      root.cloudinary || (root.cloudinary = {});
       return root.cloudinary.Transformation = factory(root.cloudinary.Configuration, root.cloudinary.parameters, root.cloudinary.Util);
     }
   })(this, function(Configuration, parameters, Util) {
@@ -2202,7 +2203,7 @@
     return Cloudinary = (function() {
       var AKAMAI_SHARED_CDN, CF_SHARED_CDN, DEFAULT_POSTER_OPTIONS, DEFAULT_VIDEO_SOURCE_TYPES, OLD_AKAMAI_SHARED_CDN, SHARED_CDN, VERSION, absolutize, applyBreakpoints, cdnSubdomainNumber, closestAbove, cloudinaryUrlPrefix, defaultBreakpoints, finalizeResourceType, parentWidth;
 
-      VERSION = "2.0.1";
+      VERSION = "2.0.3";
 
       CF_SHARED_CDN = "d3jpl91pxevbkh.cloudfront.net";
 
@@ -2265,7 +2266,7 @@
         this.devicePixelRatioCache = {};
         this.responsiveConfig = {};
         this.responsiveResizeInitialized = false;
-        configuration = new cloudinary.Configuration(options);
+        configuration = new Configuration(options);
         this.config = function(newConfig, newValue) {
           return configuration.config(newConfig, newValue);
         };
@@ -2781,7 +2782,7 @@
       };
 
       cloudinaryUrlPrefix = function(publicId, options) {
-        var cdnPart, host, path, protocol, ref, ref1, subdomain;
+        var cdnPart, host, path, protocol, ref, subdomain;
         if (((ref = options.cloud_name) != null ? ref.indexOf("/") : void 0) === 0) {
           return '/res' + options.cloud_name;
         }
@@ -2792,8 +2793,6 @@
         path = "/" + options.cloud_name;
         if (options.protocol) {
           protocol = options.protocol + '//';
-        } else if ((typeof window !== "undefined" && window !== null ? (ref1 = window.location) != null ? ref1.protocol : void 0 : void 0) === 'file:') {
-          protocol = 'file://';
         }
         if (options.private_cdn) {
           cdnPart = options.cloud_name + "-";
@@ -3233,7 +3232,13 @@
     } else if (typeof exports === 'object') {
       return module.exports = factory(require('jquery'), require('util'), require('cloudinaryjquery'));
     } else {
-      return root.cloudinary.CloudinaryJQuery = factory(jQuery, root.cloudinary.Util, root.cloudinary.CloudinaryJQuery);
+      root.cloudinary.CloudinaryJQuery = factory(jQuery, root.cloudinary.Util, root.cloudinary.CloudinaryJQuery);
+      $(function() {
+        if ($.fn.cloudinary_fileupload !== void 0) {
+          return $('input.cloudinary-fileupload[type=file]').cloudinary_fileupload();
+        }
+      });
+      return root.cloudinary.CloudinaryJQuery;
     }
   })(this, function(jQuery, Util, CloudinaryJQuery) {
 
@@ -3287,6 +3292,9 @@
      */
     jQuery.fn.cloudinary_fileupload = function(options) {
       var cloud_name, initializing, resource_type, type, upload_url;
+      if (!Util.isFunction($.fn.fileupload)) {
+        return this;
+      }
       initializing = !this.data('blueimpFileupload');
       if (initializing) {
         options = jQuery.extend({
@@ -3366,6 +3374,9 @@
      * @returns {jQuery}
      */
     jQuery.fn.cloudinary_upload_url = function(remote_url) {
+      if (!Util.isFunction($.fn.fileupload)) {
+        return this;
+      }
       this.fileupload('option', 'formData').file = remote_url;
       this.fileupload('add', {
         files: [remote_url]
@@ -3449,7 +3460,7 @@
 (function() {
   (function(root, factory) {
     if ((typeof define === 'function') && define.amd) {
-      return define('cloudinary-jquery-file-upload-full',['utf8_encode', 'crc32', 'util', 'transformation', 'configuration', 'tags/htmltag', 'tags/imagetag', 'tags/videotag', 'cloudinary', 'cloudinaryjquery', 'jquery-file-upload'], factory);
+      return define(['utf8_encode', 'crc32', 'util', 'transformation', 'configuration', 'tags/htmltag', 'tags/imagetag', 'tags/videotag', 'cloudinary', 'cloudinaryjquery', 'jquery-file-upload'], factory);
     } else if (typeof exports === 'object') {
       return module.exports = factory(require('utf8_encode'), require('crc32'), require('util'), require('transformation'), require('configuration'), require('tags/htmltag'), require('tags/imagetag'), require('tags/videotag'), require('cloudinary'), require('cloudinaryjquery'), require('jquery-file-upload'));
     } else {

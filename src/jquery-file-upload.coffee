@@ -8,7 +8,10 @@
     module.exports = factory(require('jquery'), require('util'), require('cloudinaryjquery'))
   else
     root.cloudinary.CloudinaryJQuery = factory(jQuery, root.cloudinary.Util, root.cloudinary.CloudinaryJQuery)
-
+    $ ->
+      if $.fn.cloudinary_fileupload != undefined
+        $('input.cloudinary-fileupload[type=file]').cloudinary_fileupload()
+    root.cloudinary.CloudinaryJQuery
 
 )(this,  (jQuery, Util, CloudinaryJQuery)->
   ###*
@@ -50,6 +53,7 @@
    * @returns {jQuery}
   ###
   jQuery.fn.cloudinary_fileupload = (options) ->
+    return this unless Util.isFunction($.fn.fileupload)
     initializing = !@data('blueimpFileupload')
     if initializing
       options = jQuery.extend({
@@ -130,6 +134,7 @@
    * @returns {jQuery}
   ###
   jQuery.fn.cloudinary_upload_url = (remote_url) ->
+    return this unless Util.isFunction($.fn.fileupload)
     @fileupload('option', 'formData').file = remote_url
     @fileupload 'add', files: [ remote_url ]
     delete @fileupload('option', 'formData').file
